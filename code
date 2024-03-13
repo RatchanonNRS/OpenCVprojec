@@ -130,7 +130,7 @@ while webcam.isOpened():
     print(distance)
     # Display the result with annotations
     result = np.vstack((top_region, img))
-    cv2.imshow("Koolac", result)
+    cv2.imshow("Face detection", result)
 
     # Check for the 'q' key press to exit the loop
     if cv2.waitKey(20) & 0xFF == ord("q"):
